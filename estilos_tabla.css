@@ -1,0 +1,73 @@
+/* === Tablas === */
+QTableWidget {
+    background-color: #ffffff;
+    color: #333333;
+    gridline-color: #e0e0e0;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-family: "Segoe UI Variable", "Roboto", "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    selection-background-color: #e8f0fe; /* azul claro al seleccionar */
+    selection-color: #0078d7;
+    alternate-background-color: #f9fafc; /* filas alternadas */
+}
+
+/* Cabecera horizontal */
+QHeaderView::section {
+    background-color: #f1f3f6;
+    color: #333333;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 8px;
+}
+
+/* Cabecera horizontal al pasar el cursor */
+QHeaderView::section:hover {
+    background-color: #e8ecf1;
+}
+
+/* Celdas */
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+
+/* Celda seleccionada */
+QTableWidget::item:selected {
+    background-color: #e8f0fe;
+    color: #0078d7;
+}
+
+/* Bordes del header alineados al contenido */
+QHeaderView {
+    border: none;
+}
+
+/* Barra de desplazamiento dentro de la tabla */
+QTableCornerButton::section {
+    background-color: #f1f3f6;
+    border: 1px solid #dcdcdc;
+}
+
+/* Scrollbars coherentes dentro de tablas */
+QTableWidget QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 10px;
+    border-radius: 4px;
+}
+QTableWidget QScrollBar::handle:vertical {
+    background: #cccccc;
+    min-height: 20px;
+    border-radius: 4px;
+}
+QTableWidget QScrollBar::handle:vertical:hover {
+    background: #0078d7;
+}
+QTableWidget QScrollBar::add-line:vertical,
+QTableWidget QScrollBar::sub-line:vertical {
+    height: 0;
+}

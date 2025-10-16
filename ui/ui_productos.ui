@@ -37,19 +37,19 @@ QFrame {
 }
 
 /* Barra superior */
-#frame {
+#frame_superior {
     background-color: #e8ecf1;
     border: none;
 }
 
 /* Panel lateral */
-#frame_3 {
+#frame_lateral {
     background-color: #f1f3f6;
     border-right: 1px solid #d1d1d1;
 }
 
 /* Área principal */
-#frame_4 {
+#frame_paginas {
     background-color: #ffffff;
 }
 
@@ -167,7 +167,7 @@ QVBoxLayout, QHBoxLayout {
 }
 
 /* === Botones laterales === */
-#boton_nuevo, #boton_buscar, #boton_actualizar, #boton_eliminar {
+#boton_agregar, #boton_buscar, #boton_actualizar, #boton_eliminar, #boton_consultar {
     background-color: #ffffff;
     border: 1px solid #cccccc;
     color: #333333;
@@ -175,19 +175,21 @@ QVBoxLayout, QHBoxLayout {
     font-size: 15px;
 }
 
-#boton_nuevo:hover, 
+#boton_agregar:hover, 
 #boton_buscar:hover, 
 #boton_actualizar:hover, 
-#boton_eliminar:hover {
+#boton_eliminar:hover,
+#boton_consultar:hover {
     background-color: #e8f0fe;
     border: 1px solid #0078d7;
     color: #0078d7;
 }
 
-#boton_nuevo:pressed, 
+#boton_agregar:pressed, 
 #boton_buscar:pressed, 
 #boton_actualizar:pressed, 
-#boton_eliminar:pressed {
+#boton_eliminar:pressed ,
+#boton_consultar:pressed{
     background-color: #cce0ff;
 }
 
@@ -323,7 +325,7 @@ QToolTip {
      </widget>
     </item>
     <item>
-     <widget class="QFrame" name="frame_2">
+     <widget class="QFrame" name="frame_central">
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
@@ -503,7 +505,7 @@ QToolTip {
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="frame_4">
+        <widget class="QFrame" name="frame_paginas">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -529,7 +531,7 @@ QToolTip {
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
-             <number>0</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="page_agregar">
              <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -874,7 +876,7 @@ QToolTip {
                     </widget>
                    </item>
                    <item row="0" column="2">
-                    <widget class="QPushButton" name="boton_buscar_3">
+                    <widget class="QPushButton" name="boton_buscar_producto_actualizar">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -1138,7 +1140,7 @@ QTableWidget QScrollBar::sub-line:vertical {
                     </widget>
                    </item>
                    <item row="0" column="2">
-                    <widget class="QPushButton" name="boton_buscar_4">
+                    <widget class="QPushButton" name="boton_buscar_producto_eliminar">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>

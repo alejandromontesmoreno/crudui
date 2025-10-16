@@ -30,7 +30,19 @@ class Load_ui_productos(QtWidgets.QMainWindow):
         self.boton_actualizar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_actualizar))
         self.boton_eliminar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_eliminar))
         self.boton_consultar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_consultar))
-        
+    
+    #Operaciones con el modelo de datos            
+    def guardar_producto(self):
+        pass
+
+    def buscar_producto(self):
+        pass
+
+    def actualizar_producto(self):
+        pass
+
+    def eliminar_producto(self):
+        pass 
         
     ## mover ventana
     def mousePressEvent(self, event):
